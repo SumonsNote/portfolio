@@ -4,7 +4,7 @@ Welcome to my **Full Stack Developer Portfolio**! 🚀 This website showcases my
 
 ## 🖥️ Live Demo
 
-[Portfolio Website](https://your-portfolio-link.com) _(Replace with your live link)_
+[Portfolio Website](https://sumonsnote.vercel.app/)
 
 ---
 
@@ -49,7 +49,7 @@ Welcome to my **Full Stack Developer Portfolio**! 🚀 This website showcases my
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/portfolio-website.git
+   git clone https://github.com/SumonsNote/portfolio
    cd portfolio-website
    ```
 
@@ -102,9 +102,9 @@ portfolio-website/
 
 Feel free to reach out via:
 
-- **Email:** your.email@example.com
-- **LinkedIn:** [Your Profile](https://linkedin.com/in/yourprofile)
-- **GitHub:** [Your GitHub](https://github.com/yourusername)
+- **Email:** sohankhance@gmail.com
+- **LinkedIn:** [Your Profile](https://www.linkedin.com/in/sumonsnote/)
+- **GitHub:** [Your GitHub](https://github.com/SumonsNote)
 
 ---
 
