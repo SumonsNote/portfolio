@@ -10,7 +10,7 @@ const projects = [
     title: "E-commerce Platform",
     description:
       "A full-stack e-commerce solution with product management, shopping cart, and payment integration.",
-    image: "/projects/kabbo.png",
+    image: "/projects/kabbo.jpg",
     technologies: ["Reactjs", "Nextjs", "Express", "MongoDB", "Bkash"],
     liveDemo: "https://www.kabbomobileshop.com/",
     sourceCode: "https://github.com/SumonsNote/mcom-dashboard",
