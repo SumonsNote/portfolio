@@ -48,8 +48,8 @@ export default function Projects() {
               className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden flex flex-col"
             >
               <Image
-                src={project.image || "/placeholder.svg"}
-                alt={project.title}
+                src={project?.image}
+                alt={project?.title}
                 width={600}
                 height={300}
                 className="w-full h-48 object-cover"
