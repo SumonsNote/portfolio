@@ -11,7 +11,7 @@ const projects = [
     description:
       "A full-stack e-commerce solution with product management, shopping cart, and payment integration.",
     image: "/projects/kabbo.png",
-    technologies: ["React", "Node.js", "Express", "MongoDB", "Stripe"],
+    technologies: ["Reactjs", "Nextjs", "Express", "MongoDB", "Bkash"],
     liveDemo: "https://www.kabbomobileshop.com/",
     sourceCode: "https://github.com/SumonsNote/mcom-dashboard",
   },
@@ -20,7 +20,7 @@ const projects = [
     description:
       "A React-based hotel booking app with search functionality, user authentication, and real-time updates.",
     image: "/projects/global-booking.png",
-    technologies: ["React", "Firebase", "React DnD", "Tailwind CSS"],
+    technologies: ["React", "Nextjs", "Stripe", "NextAuth", "MongoDB"],
     liveDemo: "https://global-booking.vercel.app/",
     sourceCode: "https://github.com/SumonsNote/global-booking",
   },
