@@ -103,8 +103,8 @@ portfolio-website/
 Feel free to reach out via:
 
 - **Email:** sohankhance@gmail.com
-- **LinkedIn:** [Your Profile](https://www.linkedin.com/in/sumonsnote/)
-- **GitHub:** [Your GitHub](https://github.com/SumonsNote)
+- **LinkedIn:** [My Profile](https://www.linkedin.com/in/sumonsnote/)
+- **GitHub:** [My GitHub](https://github.com/SumonsNote)
 
 ---
 
