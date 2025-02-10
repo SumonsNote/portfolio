@@ -16,6 +16,15 @@ const projects = [
     sourceCode: "https://github.com/SumonsNote/mcom-dashboard",
   },
   {
+    title: "An ecommerce for selling drugs and medicines",
+    description:
+      "A React-based hotel booking app with search functionality, user authentication, and real-time updates.",
+    image: "/projects/memservice.png",
+    technologies: ["React", "Nextjs", "Bkash", "NextAuth", "MongoDB"],
+    liveDemo: "https://www.memservicebd.com",
+    sourceCode: "https://github.com/SumonsNote/memservice",
+  },
+  {
     title: "A Global Booking App",
     description:
       "A React-based hotel booking app with search functionality, user authentication, and real-time updates.",
