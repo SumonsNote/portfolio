@@ -20,7 +20,7 @@ export default function Footer() {
             transition={{ duration: 0.5 }}
             className="text-gray-600 dark:text-gray-300 mb-4 md:mb-0"
           >
-            © 2023 John Doe. All rights reserved.
+            © 2024 sumonsnote. All rights reserved.
           </motion.p>
           <div className="flex space-x-4">
             {socialLinks.map((link, index) => (
