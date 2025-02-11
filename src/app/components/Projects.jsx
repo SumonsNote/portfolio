@@ -16,6 +16,15 @@ const projects = [
     sourceCode: "https://github.com/SumonsNote/mcom-dashboard",
   },
   {
+    title: "E-commerce Dashboard",
+    description:
+      "A full-stack e-commerce dashbaord to manage the application with product management, shopping cart, and payment integration.",
+    image: "/projects/dashboard.png",
+    technologies: ["Reactjs", "Nextjs", "Express", "MongoDB", "Bkash"],
+    liveDemo: "https://mcom-dashboard.vercel.app/dashboard",
+    sourceCode: "https://github.com/SumonsNote/mcom-dashboard",
+  },
+  {
     title: "An ecommerce for selling drugs and medicines",
     description:
       "A React-based hotel booking app with search functionality, user authentication, and real-time updates.",
