@@ -21,7 +21,7 @@ const projects = [
       "A full-stack e-commerce dashbaord to manage the application with product management, shopping cart, and payment integration.",
     image: "/projects/dashboard.png",
     technologies: ["Reactjs", "Nextjs", "Express", "MongoDB", "Bkash"],
-    liveDemo: "mcomadmin.vercel.app",
+    liveDemo: "https://mcomadmin.vercel.app",
     // sourceCode: "https://github.com/SumonsNote/mcomadmin",
   },
   {
