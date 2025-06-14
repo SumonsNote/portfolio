@@ -105,15 +105,17 @@ export default function Projects() {
                   <FaExternalLinkAlt className="mr-2" />
                   Live Demo
                 </a>
-                <a
-                  href={project.sourceCode}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center text-gray-600 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
-                >
-                  <FaGithub className="mr-2" />
-                  Source Code
-                </a>
+                {project?.sourceCode && (
+                  <a
+                    href={project.sourceCode}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center text-gray-600 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
+                  >
+                    <FaGithub className="mr-2" />
+                    Source Code
+                  </a>
+                )}
               </div>
             </motion.div>
           ))}
