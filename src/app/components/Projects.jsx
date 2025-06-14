@@ -12,8 +12,8 @@ const projects = [
       "A full-stack e-commerce solution with product management, shopping cart, and payment integration.",
     image: "/projects/kabbo.jpg",
     technologies: ["Reactjs", "Nextjs", "Express", "MongoDB", "Bkash"],
-    liveDemo: "https://www.kabbomobileshop.com/",
-    sourceCode: "https://github.com/SumonsNote/mcom-dashboard",
+    liveDemo: "https://mecomui.vercel.app/",
+    // sourceCode: "https://github.com/SumonsNote/mecom-front",
   },
   {
     title: "E-commerce Dashboard",
@@ -21,8 +21,8 @@ const projects = [
       "A full-stack e-commerce dashbaord to manage the application with product management, shopping cart, and payment integration.",
     image: "/projects/dashboard.png",
     technologies: ["Reactjs", "Nextjs", "Express", "MongoDB", "Bkash"],
-    liveDemo: "https://mcom-dashboard.vercel.app/dashboard",
-    sourceCode: "https://github.com/SumonsNote/mcom-dashboard",
+    liveDemo: "mcomadmin.vercel.app",
+    // sourceCode: "https://github.com/SumonsNote/mcomadmin",
   },
   {
     title: "An ecommerce for selling drugs and medicines",
@@ -31,7 +31,7 @@ const projects = [
     image: "/projects/memservice.png",
     technologies: ["React", "Nextjs", "Bkash", "NextAuth", "MongoDB"],
     liveDemo: "https://www.memservicebd.com",
-    sourceCode: "https://github.com/SumonsNote/memservice",
+    // sourceCode: "https://github.com/SumonsNote/memservice",
   },
   {
     title: "A Global Booking App",
