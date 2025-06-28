@@ -28,9 +28,9 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative overflow-hidden"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]"
     >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-20">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-20 ">
         <div className="animate-fade-up">
           <div className="mb-8">
             <div className="w-32 h-32 mx-auto mb-8 rounded-full bg-gradient-to-r from-electric-blue via-neon-purple to-neon-cyan p-1 animate-float relative">
