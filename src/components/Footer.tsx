@@ -39,7 +39,7 @@ const Footer = () => {
             onClick={scrollToTop}
             className="text-3xl font-bold text-gradient font-mono hover:scale-110 transition-transform duration-300"
           >
-            {"<AM />"}
+            {"<SUMONSNOTE />"}
           </button>
 
           {/* Navigation Links */}
