@@ -42,9 +42,6 @@ const Hero = () => {
           </div>
 
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-6">
-            <span className="block text-white/90 mb-2 drop-shadow-2xl">
-              Hi, I'm
-            </span>
             <span className="block text-gradient drop-shadow-2xl">
               SUMON H. SHOHAN
             </span>
