@@ -1,117 +1,73 @@
-# Full Stack Developer Portfolio
+# Welcome to your Lovable project
 
-Welcome to my **Full Stack Developer Portfolio**! 🚀 This website showcases my skills, projects, and experience in web development. Built with modern technologies to reflect my expertise in both frontend and backend development.
+## Project info
 
-## 🖥️ Live Demo
+**URL**: https://lovable.dev/projects/58b08d97-1f1a-4e96-b420-dac27f7c50b8
 
-[Portfolio Website](https://sumonsnote.vercel.app/)
+## How can I edit this code?
 
----
+There are several ways of editing your application.
 
-## 📋 Features
+**Use Lovable**
 
-- **Responsive Design:** Optimized for all devices (desktop, tablet, mobile).
-- **Projects Showcase:** Highlighting real-world projects with descriptions, tech stacks, and live demos.
-- **Skills Section:** Display of technical proficiencies with icons.
-- **About Me:** Brief professional summary.
-- **Contact Form:** For easy communication.
-- **Dark/Light Theme Toggle:** Smooth UI/UX for different preferences.
+Simply visit the [Lovable Project](https://lovable.dev/projects/58b08d97-1f1a-4e96-b420-dac27f7c50b8) and start prompting.
 
----
+Changes made via Lovable will be committed automatically to this repo.
 
-## ⚙️ Tech Stack
+**Use your preferred IDE**
 
-### **Frontend:**
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-- React ⚛️
-- Next.js ⏭️
-- Tailwind CSS 💨
-- JavaScript 📜
-- HTML 🌍 & CSS 🎨
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-### **Backend:**
+Follow these steps:
 
-- Node.js 🌐
-- Express.js 🚀
-- MongoDB 🍃 / PostgreSQL 🐘
-- RESTful APIs 🔗 / GraphQL 🔺
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
 
-### **DevOps & Tools:**
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
 
-- Git & GitHub 🐱
-- Docker 🐳
-- Vercel/Netlify for Deployment 🌍
+# Step 3: Install the necessary dependencies.
+npm i
 
----
-
-## 🚀 Getting Started
-
-1. **Clone the repository:**
-
-   ```bash
-   git clone https://github.com/SumonsNote/portfolio
-   cd portfolio-website
-   ```
-
-2. **Install dependencies:**
-
-   ```bash
-   npm install
-   ```
-
-3. **Run the development server:**
-
-   ```bash
-   npm run dev
-   ```
-
-   Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-4. **Build for production:**
-   ```bash
-   npm run build
-   npm start
-   ```
-
----
-
-## 📂 Project Structure
-
-```
-portfolio-website/
-├── components/
-├── pages/
-├── public/
-├── styles/
-├── utils/
-├── package.json
-└── README.md
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
 ```
 
----
+**Edit a file directly in GitHub**
 
-## ✍️ Customization
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-- Update `components/Skills.js` to add/remove skills.
-- Modify `pages/projects.js` to showcase your projects.
-- Adjust styles in `styles/` folder to personalize the theme.
+**Use GitHub Codespaces**
 
----
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## 📬 Contact
+## What technologies are used for this project?
 
-Feel free to reach out via:
+This project is built with:
 
-- **Email:** sohankhance@gmail.com
-- **LinkedIn:** [My Profile](https://www.linkedin.com/in/sumonsnote/)
-- **GitHub:** [My GitHub](https://github.com/SumonsNote)
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
 
----
+## How can I deploy this project?
 
-## 📜 License
+Simply open [Lovable](https://lovable.dev/projects/58b08d97-1f1a-4e96-b420-dac27f7c50b8) and click on Share -> Publish.
 
-This project is open-source and available under the [MIT License](LICENSE).
+## Can I connect a custom domain to my Lovable project?
 
----
+Yes, you can!
 
-⭐ **If you like this project, give it a star on GitHub!** ⭐
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
