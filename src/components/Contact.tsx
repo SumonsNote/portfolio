@@ -1,9 +1,15 @@
+import emailjs from "emailjs-com";
 import { Mail, MapPin, Phone, Send } from "lucide-react";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { useToast } from "../hooks/use-toast";
+
+const SERVICE_ID = "service_cyutc7c";
+const TEMPLATE_ID = "template_ra5rm5t";
+const PUBLIC_KEY = "MRrYnBcyYR1YJCwNh";
 
 const Contact = () => {
   const { toast } = useToast();
+  const formRef = useRef<HTMLFormElement>(null);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -25,31 +31,27 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
+      if (formRef.current) {
+        await emailjs.sendForm(
+          SERVICE_ID,
+          TEMPLATE_ID,
+          formRef.current,
+          PUBLIC_KEY
+        );
 
-      const data = await res.json();
-
-      if (res.ok) {
         toast({
           title: "Message sent successfully!",
           description: "Thanks for reaching out. I'll get back to you soon.",
         });
+
         setFormData({ name: "", email: "", message: "" });
       } else {
-        toast({
-          title: "Error sending message",
-          description: data.error || "Something went wrong. Try again later.",
-          variant: "destructive",
-        });
+        throw new Error("Form not found");
       }
     } catch (error) {
       toast({
-        title: "Server error",
-        description: "Please try again later.",
+        title: "Error sending message",
+        description: "Please try again later or contact me directly.",
         variant: "destructive",
       });
     } finally {
@@ -99,7 +101,7 @@ const Contact = () => {
               <h3 className="text-2xl font-semibold text-foreground mb-6">
                 Send me a message
               </h3>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label
                     htmlFor="name"
