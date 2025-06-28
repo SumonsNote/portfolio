@@ -1,21 +1,22 @@
-
-import { useState } from 'react';
-import { Mail, MapPin, Phone, Send } from 'lucide-react';
-import { useToast } from '../hooks/use-toast';
+import { Mail, MapPin, Phone, Send } from "lucide-react";
+import { useState } from "react";
+import { useToast } from "../hooks/use-toast";
 
 const Contact = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
+    name: "",
+    email: "",
+    message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -25,14 +26,14 @@ const Contact = () => {
 
     // Simulate form submission
     try {
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+
       toast({
         title: "Message sent successfully!",
         description: "Thanks for reaching out. I'll get back to you soon.",
       });
-      
-      setFormData({ name: '', email: '', message: '' });
+
+      setFormData({ name: "", email: "", message: "" });
     } catch (error) {
       toast({
         title: "Error sending message",
@@ -47,22 +48,22 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: <Mail className="w-6 h-6" />,
-      title: 'Email',
-      content: 'alex@example.com',
-      link: 'mailto:alex@example.com'
+      title: "Email",
+      content: "sumon@sumonsnote.com",
+      link: "mailto:sumon@sumonsnote.com",
     },
     {
       icon: <Phone className="w-6 h-6" />,
-      title: 'Phone',
-      content: '+1 (555) 123-4567',
-      link: 'tel:+15551234567'
+      title: "Phone",
+      content: "+88015 1651 0306",
+      link: "tel:+8801516510306",
     },
     {
       icon: <MapPin className="w-6 h-6" />,
-      title: 'Location',
-      content: 'San Francisco, CA',
-      link: 'https://maps.google.com'
-    }
+      title: "Kushita, Bangladesh",
+      content: "Janipur, Khoksa, Kushtia",
+      link: "",
+    },
   ];
 
   return (
@@ -75,18 +76,23 @@ const Contact = () => {
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-electric-blue to-neon-cyan mx-auto mb-8"></div>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Have a project in mind? Let's discuss how we can bring your ideas to life.
-              I'm always excited to work on new challenges.
+              Have a project in mind? Let's discuss how we can bring your ideas
+              to life. I'm always excited to work on new challenges.
             </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
             {/* Contact Form */}
             <div className="card-glow p-8 rounded-xl">
-              <h3 className="text-2xl font-semibold text-foreground mb-6">Send me a message</h3>
+              <h3 className="text-2xl font-semibold text-foreground mb-6">
+                Send me a message
+              </h3>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium text-foreground mb-2"
+                  >
                     Your Name
                   </label>
                   <input
@@ -97,11 +103,14 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 bg-dark-bg border border-electric-blue/20 rounded-lg focus:outline-none focus:border-electric-blue text-foreground placeholder-muted-foreground"
-                    placeholder="John Doe"
+                    placeholder="Your name"
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-foreground mb-2"
+                  >
                     Email Address
                   </label>
                   <input
@@ -112,11 +121,14 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 bg-dark-bg border border-electric-blue/20 rounded-lg focus:outline-none focus:border-electric-blue text-foreground placeholder-muted-foreground"
-                    placeholder="john@example.com"
+                    placeholder="sumon@sumonsnote.com"
                   />
                 </div>
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-foreground mb-2"
+                  >
                     Message
                   </label>
                   <textarea
@@ -140,7 +152,7 @@ const Contact = () => {
                   ) : (
                     <Send className="w-5 h-5" />
                   )}
-                  {isSubmitting ? 'Sending...' : 'Send Message'}
+                  {isSubmitting ? "Sending..." : "Send Message"}
                 </button>
               </form>
             </div>
@@ -148,10 +160,13 @@ const Contact = () => {
             {/* Contact Information */}
             <div className="space-y-8">
               <div>
-                <h3 className="text-2xl font-semibold text-foreground mb-6">Get in touch</h3>
+                <h3 className="text-2xl font-semibold text-foreground mb-6">
+                  Get in touch
+                </h3>
                 <p className="text-muted-foreground mb-8 leading-relaxed">
-                  I'm currently available for freelance work and new opportunities. 
-                  Whether you have a question or just want to say hi, I'll do my best to get back to you!
+                  I'm currently available for freelance work and new
+                  opportunities. Whether you have a question or just want to say
+                  hi, I'll do my best to get back to you!
                 </p>
               </div>
 
@@ -160,15 +175,21 @@ const Contact = () => {
                   <a
                     key={index}
                     href={info.link}
-                    target={info.link.startsWith('http') ? '_blank' : undefined}
-                    rel={info.link.startsWith('http') ? 'noopener noreferrer' : undefined}
+                    target={info.link.startsWith("http") ? "_blank" : undefined}
+                    rel={
+                      info.link.startsWith("http")
+                        ? "noopener noreferrer"
+                        : undefined
+                    }
                     className="flex items-center space-x-4 p-4 card-glow rounded-lg hover:scale-105 transition-all duration-300 group"
                   >
                     <div className="text-electric-blue group-hover:scale-110 transition-transform duration-300">
                       {info.icon}
                     </div>
                     <div>
-                      <h4 className="font-semibold text-foreground">{info.title}</h4>
+                      <h4 className="font-semibold text-foreground">
+                        {info.title}
+                      </h4>
                       <p className="text-muted-foreground">{info.content}</p>
                     </div>
                   </a>
@@ -176,7 +197,9 @@ const Contact = () => {
               </div>
 
               <div className="mt-12">
-                <h4 className="text-lg font-semibold text-foreground mb-4">Why work with me?</h4>
+                <h4 className="text-lg font-semibold text-foreground mb-4">
+                  Why work with me?
+                </h4>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start">
                     <span className="text-electric-blue mr-2">✓</span>

@@ -1,5 +1,4 @@
-
-import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
+import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -7,28 +6,28 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: <Github className="w-5 h-5" />,
-      href: 'https://github.com',
-      label: 'GitHub'
+      href: "https://github.com/sumonsnote",
+      label: "GitHub",
     },
     {
       icon: <Linkedin className="w-5 h-5" />,
-      href: 'https://linkedin.com',
-      label: 'LinkedIn'
+      href: "https://www.linkedin.com/in/sumonsnote/",
+      label: "LinkedIn",
     },
     {
       icon: <Twitter className="w-5 h-5" />,
-      href: 'https://twitter.com',
-      label: 'Twitter'
+      href: "https://x.com/sumonsnote",
+      label: "Twitter",
     },
     {
       icon: <Mail className="w-5 h-5" />,
-      href: 'mailto:alex@example.com',
-      label: 'Email'
-    }
+      href: "mailto:sumon@sumonsnote.com",
+      label: "Email",
+    },
   ];
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
@@ -40,18 +39,20 @@ const Footer = () => {
             onClick={scrollToTop}
             className="text-3xl font-bold text-gradient font-mono hover:scale-110 transition-transform duration-300"
           >
-            {'<AM />'}
+            {"<AM />"}
           </button>
 
           {/* Navigation Links */}
           <nav className="flex flex-wrap justify-center gap-8">
-            {['Home', 'About', 'Skills', 'Projects', 'Contact'].map((item) => (
+            {["Home", "About", "Skills", "Projects", "Contact"].map((item) => (
               <button
                 key={item}
                 onClick={() => {
-                  const element = document.querySelector(`#${item.toLowerCase()}`);
+                  const element = document.querySelector(
+                    `#${item.toLowerCase()}`
+                  );
                   if (element) {
-                    element.scrollIntoView({ behavior: 'smooth' });
+                    element.scrollIntoView({ behavior: "smooth" });
                   }
                 }}
                 className="text-muted-foreground hover:text-electric-blue transition-colors"
@@ -67,8 +68,12 @@ const Footer = () => {
               <a
                 key={link.label}
                 href={link.href}
-                target={link.href.startsWith('http') ? '_blank' : undefined}
-                rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                target={link.href.startsWith("http") ? "_blank" : undefined}
+                rel={
+                  link.href.startsWith("http")
+                    ? "noopener noreferrer"
+                    : undefined
+                }
                 className="text-muted-foreground hover:text-electric-blue p-2 rounded-full hover:bg-electric-blue/10 transition-all duration-300 hover:scale-110"
                 aria-label={link.label}
               >
@@ -80,7 +85,7 @@ const Footer = () => {
           {/* Copyright */}
           <div className="text-center pt-8 border-t border-electric-blue/10 w-full">
             <p className="text-muted-foreground text-sm">
-              © {currentYear} Alex Morgan. All rights reserved.
+              © {currentYear} SUMONSNOTE. All rights reserved.
             </p>
             <p className="text-muted-foreground text-xs mt-2">
               Built with React, TypeScript & Tailwind CSS
